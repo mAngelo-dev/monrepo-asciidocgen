@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f7fb; /* Light blue background */
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.imageContainer {
+  margin-bottom: 0;
+  text-align: center; /* Center text within the container */
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inputContainer {
+  margin-bottom: 20px;
+  text-align: center; /* Center text within the container */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #072e85; /* Blue border */
+  border-radius: 5px;
+}
+
+#uploadButton {
+  background-color: #072e85; /* Blue button */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#uploadButton:hover {
+  background-color: #056317; /* Green on hover */
+}
+
+h1 {
+  margin-top: 0;
+}
+
+

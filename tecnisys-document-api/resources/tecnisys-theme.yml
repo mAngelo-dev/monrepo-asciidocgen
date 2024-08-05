@@ -1,0 +1,71 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    Arimo:
+      normal: Arimo-Regular.ttf
+      bold: Arimo-Bold.ttf
+      italic: Arimo-Italic.ttf
+      bold_italic: Arimo-BoldItalic.ttf
+    Courier Prime:
+      normal: CourierPrime-Regular.ttf
+      bold: CourierPrime-Bold.ttf
+      italic: CourierPrime-Italic.ttf
+      bold_italic: CourierPrime-BoldItalic.ttf
+heading:
+  font_family: Arimo
+  font_size: 20px
+  font_style: bold
+  font_color: '#000000'
+  h1-font-color: '#326799'
+  h1-font-size: 28px
+  h1-text-align: right
+title_page:
+  title:
+    font_color: '#326799'
+    font_size: 20px
+    align: right
+page:
+  layout: book
+  background_color: '#ffffff'
+  numbering:
+    start-at: 1
+base:
+  font_color: '#000000'
+  font_family: Arimo
+  font_size: 10,5px
+header:
+  font_size: 12px
+  font_color: '#000000'
+  content: '{title}'
+footer:
+  font_size: 8px
+  font_color: '#426cb4'
+  justify: true
+  height: $base_line_height_length * 2.5
+  recto:
+    left:
+      content: 'SIA Trecho 08 Lote 245/255/265 | Brasília – DF | CEP: 71205-080 | Fone: +55 61 3039-9700 | Fax: +55 61 3039-9701 | www.tecnisys.com.br'
+    right:
+      content: 'Página {page-number} de {page-count}'
+      color: '#000000'
+  verso:
+    left:
+      content: $footer_recto_left_content
+    right:
+      content: $footer_recto_right_content
+code:
+  background_color: '#e6e7fe'
+  border_color: '#000000'
+  border_width: 1px
+  font_color: '#000000'
+  font_family: Courier Prime
+table:
+  head:
+    background_color: '#000000'
+    font_color: '#FFFFFF'
+  border_color: '#000000'
+  border_width: 1px
+  background_color: '#FFFFFF'
+  font_color: '#000000'
+  font_size: 10,5px
